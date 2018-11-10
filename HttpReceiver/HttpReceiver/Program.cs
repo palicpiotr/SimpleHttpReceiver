@@ -10,15 +10,7 @@ namespace HttpReceiver
         {
             Console.WriteLine("Start");
 
-            var client = new WebClient();
-            //var task = client.DownloadStringTaskAsync("https://habrahabr.ru/post/261649/");
-            //Console.WriteLine("AAAAAAA");
-            //Task.Run(async () =>
-            //          {
-            //              var res = await task;
-            //              Console.WriteLine(res);
-            //          });
-
+            var client = new WebClient();          
             HttpReceiver rec = new HttpReceiver("http://localhost", 8080);
             Task.Run(async () =>
             {
